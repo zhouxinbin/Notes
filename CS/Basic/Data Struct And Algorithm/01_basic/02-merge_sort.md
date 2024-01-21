@@ -1,14 +1,10 @@
 # 归并排序
 
-
-
 ## 归并排序
 
-①确定分界点 mid=q[(l+r)/2]
-
-②递归排序 left right
-
-③归并 合二为一
+1. 确定分界点 mid=q[(l+r)/2]
+2. 递归排序 left right
+3. 归并：合二为一
 
 ```c++
 #include<bits/stdc++.h>
