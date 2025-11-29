@@ -4040,7 +4040,196 @@ public class fileDownload extends HttpServlet {
 }
 ```
 
+# ES6
 
+## let
+
+在 ES6 标准中 `let` 替代了 `var` 关键词。
+
+- 在代码块中声明的 let 变量，作用于仅在代码块，var 不受限制。
+- 同一个 var 变量能声明多次，同一个 let 变量只能声明一次。
+- var 变量能变量提升，let 变量不能。
+
+```js
+console.log(a); // undefined
+var a = 100;
+
+console.log(b); // error
+let b = 100;
+```
+
+## const
+
+常量，只读。
+
+```js
+const PI = 3.14;
+```
+
+## 解构赋值
+
+新的赋值方式。
+
+### 数组解构
+
+```js
+let arr = [1, 2, 3];
+console.log(arr);
+
+let x = arr[0], y = arr[1], z = arr[2];
+console.log(x, y, z);
+
+let [a, b, c] = arr;
+console.log(a, b, c);
+
+let [o, p, q] = [1, 2, 3];
+console.log(o, p, q);
+```
+
+### 对象解构
+
+```js
+let monster = {name: '牛魔王', age: 800};
+console.log(monster.name, " ", monster.age);
+// 属性名 与 对象属性名一致
+// 顺序无所谓
+let {name, age} = monster;
+console.log("name = ",name, " age = ", age);
+
+// 方法使用对象解构
+function f1({name, age}) {
+    console.log("f1-name = ",name, " f1-age = ", age);
+}
+f1(monster);
+```
+
+## 模版字符串
+
+反引号 \`\`
+
+```js
+// 原声输出字符串换行
+let str1 = `for(int i = 0; i < 10; i++) {
+    System.out.println(i);
+}`;
+console.log(str1);
+// 字符串插入变量和表达式
+let name = "zxb";
+let str2 = `姓名=${name}`;
+console.log(str2);
+let str3 = `1+2=${1+2}`;
+console.log(str3);
+// 字符串中调用函数
+function say(name) {
+  return "hi " + name;
+}
+let str5 = `say()返回的结果=${say(name)}`;
+console.log(str5);
+```
+
+## 对象
+
+### 对象声明简写
+
+```js
+const age = 23;
+const name = "zxb";
+// 传统方式
+let people = {name : name, age : age};
+// ES6 简洁形式
+let student = {name, age};
+```
+
+### 对象方法简写
+
+```js
+// 原生写法
+let monster = {
+  name : "zxb",
+  age : 100,
+  say : function () {
+      console.log(this.name, " ", this.age);
+  }
+}
+monster.say();
+// 简洁写法
+let monster2 = {
+  name : "zxb",
+  age : 100,
+  say() {
+    console.log(this.name, " ", this.age);
+  }
+}
+monster2.say();
+```
+
+### 对象拓展运算符
+
+- 拷贝对象（深拷贝）
+- 合并对象（深拷贝）
+
+```js
+let cat2 = {...cat};
+
+let car_cat = {...car, ...cat};
+```
+
+## 箭头函数
+
+### 基本语法
+
+提供更加简洁的函数书写方式。参数列表或函数体只有一个或一行时，可以省略小括号或大括号。
+
+```js
+// 箭头函数语法
+let f2 = (n) => {
+    return n * 2;
+}
+console.log(f2(2));
+// 箭头函数省略写法
+let f3 = n => return n * 2;
+console.log(f3(2));
+// 旧方法
+let f1 = function (n) {
+    return n * 2;
+}
+console.log(f1(2));
+```
+
+箭头函数多用于匿名函数的定义
+
+```js
+function hi(f4) {
+  console.log(f4(900));
+}
+hi(n => {
+    return n + 100;
+});
+hi(n => {
+    return n - 100;
+});
+```
+
+### 对象解构
+
+```js
+let monster = {
+    name: "红孩儿",
+    skill: "sss"
+};
+// 传统方式调用对象的属性
+function f1(monster) {
+    console.log("skill=", monster.skill);
+}
+f1(monster);
+
+// 箭头函数，形参为对象，自动解构对象的 skill 赋值给 skill
+let f2 = ({skill, name}) => {
+    console.log("skill=", skill);
+  	console.log("name=", name);
+}
+f2(monster);
+```
 
 
 
