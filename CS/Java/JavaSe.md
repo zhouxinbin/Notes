@@ -2172,7 +2172,7 @@ public class test {
 
 判断一个对象的运行类型是否属于**某类**或者**某类的子类**, 返回布尔类型; 
 
-可以在类向下转型之前用instanceof进行判断
+可以在类向下转型之前用 `instanceof` 进行判断
 
 ```java
 public class Detail02 {
@@ -2194,16 +2194,12 @@ class A {}
 class B extends A{}
 ```
 
-
-
 ### 动态绑定机制
 
 1. 当调用对象方法时, 该方法会和该对象的内存地址/运行类型绑定
 2. 当调用对象属性时, 没有动态绑定机制, 哪里声明, 就哪里使用
 
-
-
-### 应用1多态数组
+### 应用1 多态数组
 
 #### 定义
 
@@ -2247,9 +2243,7 @@ public class PolyArr {
 }
 ```
 
-
-
-### 应用2多态参数
+### 应用2 多态参数
 
 #### 定义
 
@@ -2372,8 +2366,6 @@ class Test {
     }
 }
 ```
-
-
 
 ## Object类
 
@@ -3308,8 +3300,6 @@ class C extends B implements A {
 }
 ```
 
-
-
 ## 内部类
 
 ### 概括
@@ -3394,8 +3384,6 @@ class Other {
 
 局部内部类的作用域仅仅是在定义它的方法或代码块中
 
-
-
 ### 匿名内部类
 
 #### 定义
@@ -3407,23 +3395,23 @@ class Other {
 ```java
 class Outer {
     public void method() {
-    	new 接口(参数列表) {
-          
-        };
-        /*
-        基于接口的匿名内部类相当于
-        class 匿名内部类的隐藏名 implements 接口 {
-        
-        }
-        */
+        new 接口(参数列表) {
+
+          };
+          /*
+          基于接口的匿名内部类相当于
+          class 匿名内部类的隐藏名 implements 接口 {
+
+          }
+          */
         
         new 类(参数列表) {
-            
+
         };
         /*
         基于类的匿名内部类相当于
         class 匿名内部类的隐藏名 extends 类名 {
-        
+
         }
         */
    	}
@@ -3492,7 +3480,7 @@ public void method() {
 
 匿名内部类内可以直接访问外部类的所有成员, 包含私有成员;
 
-内部类属性和外部类属性同名时, 遵循就近原则, 如果需要访问外部类的同名属性, 则通过`外部类名.this.属性名` 的方式访问;
+内部类属性和外部类属性同名时, 遵循**就近原则**, 如果需要访问外部类的同名属性, 则通过`外部类名.this.属性名` 的方式访问;
 
 外部类的方法中访问匿名内部类中的成员, 通过实例化内部类对象或直接调用的方式来访问;
 
@@ -3505,8 +3493,6 @@ public void method() {
 #### 作用域
 
 匿名内部类的作用域仅仅是在定义它的方法或代码块中
-
-
 
 ### 成员内部类
 
@@ -7799,7 +7785,481 @@ boolean res = content.matches("1(38|39)\\d{8}");
 String[] res = "123#abc-999~888".split("#|-|~");
 ```
 
+# Java 新特性
 
+## Java 8 新特性
+
+> 青空的霞光
+
+### Lambda 表达式
+
+这是一个线程的匿名内部类写法。
+
+```java
+public static void main(String[] args) {
+    //现在我们想新建一个线程来搞事情
+    Thread thread = new Thread(new Runnable() {   //创建一个实现Runnable的匿名内部类
+        @Override
+        public void run() {   //具体的实现逻辑
+            System.out.println("Hello World!");
+        }
+    });
+    thread.start();
+}
+```
+
+Lambda 表达式可以简化匿名内部类的写法。
+
+```java
+public static void main(String[] args) {
+    //现在我们想新建一个线程来做事情
+    Thread thread = new Thread(() -> {
+        System.out.println("Hello World!");  //只需留下我们需要具体实现的方法体
+    });
+    thread.start();
+}
+```
+
+> 它的底层其实并不只是简简单单的语法糖替换，而是通过`invokedynamic`指令实现的，不难发现，匿名内部类会在编译时创建一个单独的class文件，但是lambda却不会，间接说明编译之后lambda并不是以匿名内部类的形式存在的
+
+**语法如下**：
+
+- `() -> {}`
+- 仅支持接口
+- 接口必须**有且只有**一个抽象方法
+
+这里有 2 个接口：
+
+```java
+package com.zhouxinbin.jdk8.lambda;
+
+@FunctionalInterface
+public interface Test {
+    String test(Integer i);
+}
+
+package com.zhouxinbin.jdk8.lambda;
+
+@FunctionalInterface
+public interface Test2 {
+    String test2(String str);
+}
+```
+
+可实现如下：
+
+```java
+package com.zhouxinbin.jdk8.lambda;
+
+public class Main {
+    public static void main(String[] args) {
+        // 匿名内部类写法
+        Test t1 = new Test() {
+            @Override
+            public String test(Integer i) {
+                return i + "";
+            }
+        };
+        System.out.println(t1.test(10));
+        // Lambda 表达式写法
+        Test t2 = i -> i + "";
+        System.out.println(t2.test(20));
+
+        // Lambda 表达式引用 静态方法
+        Test t3 = Main::function;
+        System.out.println(t3.test(30));
+
+        // Lambda 表达式引用 构造方法
+        Test2 t4 = String::new;
+        System.out.println(t4.test2("zxb"));
+    }
+
+    public static String function(Integer i) {
+        return "已经实现的方法"+i;
+    }
+}
+```
+
+### Optional 类
+
+判空：
+
+```java
+private static void low(String str) {
+    Optional.ofNullable(str).ifPresent(s -> {
+        System.out.println(s.toLowerCase());
+    });
+}
+```
+
+简化 IF- ELSE
+
+```java
+User user = getUser();
+if (user != null) { // 检查人是不是空
+    Address address = user.getAddress();
+    if (address != null) { // 检查地址是不是空
+        String city = address.getCity();
+        if (city != null) { // 检查城市是不是空
+            System.out.println(city);
+        }
+    }
+}
+
+Optional.ofNullable(user)                // 1. 把人装进盒子里（不管是死是活）
+    .map(u -> u.getAddress())            // 2. 如果盒子里有人，就去拿地址（Lambda）
+    .map(a -> a.getCity())               // 3. 如果有地址，就去拿城市（Lambda）
+    .orElse("未知城市");                 // 4. 如果中间任何一步是空的，就直接返回这个默认值
+```
+
+## Java 9 新特性
+
+### 模块化编程 $\star$
+
+基本用不到。
+
+### JShell 交互式编程
+
+类似在命令行中使用 Python
+
+```shell
+sinpin@Shinbin-MacBookAir Notes % jshell
+|  欢迎使用 JShell -- 版本 17.0.17
+|  要大致了解该版本, 请键入: /help intro
+
+jshell> /help
+|  键入 Java 语言表达式, 语句或声明。
+|  或者键入以下命令之一:
+|  /list [<名称或 id>|-all|-start]
+|  	列出您键入的源
+|  /edit <名称或 id>
+|  	编辑源条目
+|  /drop <名称或 id>
+|  	删除源条目
+|  /save [-all|-history|-start] <文件>
+|  	将片段源保存到文件
+|  /open <file>
+|  	打开文件作为源输入
+|  /vars [<名称或 id>|-all|-start]
+|  	列出已声明变量及其值
+|  /methods [<名称或 id>|-all|-start]
+|  	列出已声明方法及其签名
+|  /types [<名称或 id>|-all|-start]
+|  	列出类型声明
+|  /imports 
+|  	列出导入的项
+|  /exit [<integer-expression-snippet>]
+|  	退出 jshell 工具
+|  /env [-class-path <路径>] [-module-path <路径>] [-add-modules <模块>] ...
+|  	查看或更改评估上下文
+|  /reset [-class-path <路径>] [-module-path <路径>] [-add-modules <模块>]...
+|  	重置 jshell 工具
+|  /reload [-restore] [-quiet] [-class-path <路径>] [-module-path <路径>]...
+|  	重置和重放相关历史记录 -- 当前历史记录或上一个历史记录 (-restore)
+|  /history [-all]
+|  	您键入的内容的历史记录
+|  /help [<command>|<subject>]
+|  	获取有关使用 jshell 工具的信息
+|  /set editor|start|feedback|mode|prompt|truncation|format ...
+|  	设置配置信息
+|  /? [<command>|<subject>]
+|  	获取有关使用 jshell 工具的信息
+|  /! 
+|  	重新运行上一个片段 -- 请参阅 /help rerun
+|  /<id> 
+|  	按 ID 或 ID 范围重新运行片段 -- 参见 /help rerun
+|  /-<n> 
+|  	重新运行以前的第 n 个片段 -- 请参阅 /help rerun
+|  
+|  有关详细信息, 请键入 '/help', 后跟
+|  命令或主题的名称。
+|  例如 '/help /list' 或 '/help intro'。主题:
+|  
+|  intro
+|  	jshell 工具的简介
+|  keys
+|  	类似 readline 的输入编辑的说明
+|  id
+|  	片段 ID 以及如何使用它们的说明
+|  shortcuts
+|  	片段和命令输入提示, 信息访问以及
+|  	自动代码生成的按键说明
+|  context
+|  	/env /reload 和 /reset 的评估上下文选项的说明
+|  rerun
+|  	重新评估以前输入片段的方法的说明
+
+jshell> 
+```
+
+### 接口中 private 方法
+
+在 Java9 版本中，接口中可以添加 private 方法了。
+
+- 必须有实现
+- 只能被接口中的默认实现或私有方法调用
+
+### 集合中工厂方法
+
+```java
+public static void main(String[] args) {
+    Map<String, Integer> map = new HashMap<>();   //要快速使用Map，需要先创建一个Map对象，然后再添加数据
+    map.put("AAA", 19);
+    map.put("BBB", 23);
+
+    System.out.println(map);
+}
+```
+
+Java9之后，我们可以直接通过`of`方法来快速创建包含 **0 ~ 10 个键值对**的集合对象：
+
+```java
+public static void main(String[] args) {
+    Map<String, Integer> map = Map.of("AAA", 18, "BBB", 20);  //直接一句搞定
+
+    System.out.println(map);
+}
+```
+
+注意：`of` 创建的对象**不可被修改**；其他集合类也适用此方法。
+
+### Stream API 升级 $\star$
+
+
+
+### 其他小改进
+
+## Java 10 新特性
+
+### 局部变量类型推断
+
+```java
+public void hello() {
+  	//String name = "zxb";
+  	var name = "zxb";
+}
+```
+
+在**编译期间**执行类型推断，编译之后输出类型显示为 `String`，仅适用于局部变量。
+
+## Java 11 新特性
+
+Java 11 是继 Java 8 之后的 LTS 版本。
+
+### Lambda 形参 var
+
+Lambda 表达式形参添加 var 变量支持
+
+```java
+Consumer<String> consumer= (var s) -> {
+    System.out.println(s);
+};
+```
+
+### String 类方法的增强
+
+| 方法名        | 参数 | 作用                                           |
+| ------------- | ---- | ---------------------------------------------- |
+| isBlank       | null | 判断字符串是否为空或仅包含空格                 |
+| lines         | null | 根据字符串中的换行符进行切割，转换为 Stream 流 |
+| repeat        | int  | 把当前字符串重复拼接 n 次                      |
+| strip         | null | 去除首尾空格                                   |
+| stripLeading  | null | 去除首部空格                                   |
+| stripTrailing | null | 去除尾部空格                                   |
+
+### HttpClient
+
+用于取代 `HttpURLConnection` 类，新的 API 支持 HTTP2 和 WebSocket 协议。
+
+```java
+public static void main(String[] args) throws URISyntaxException, IOException, InterruptedException {
+    HttpClient client = HttpClient.newHttpClient();   //直接创建一个新的HttpClient
+  	//现在我们只需要构造一个Http请求实体，就可以让客户端帮助我们发送出去了（实际上就跟浏览器访问类似）
+    HttpRequest request = HttpRequest.newBuilder().uri(new URI("https://www.baidu.com")).build();
+  	//现在我们就可以把请求发送出去了，注意send方法后面还需要一个响应体处理器（内置了很多）这里我们选择ofString直接吧响应实体转换为String字符串
+    HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+  	//来看看响应实体是什么吧
+    System.out.println(response.body());
+}
+```
+
+## Java 12 - 16 新特性
+
+### switch 表达式
+
+之前 switch 写法：
+
+```java
+public static String grade(int score){
+    score /= 10;  //既然分数段都是整数，那就直接整除10
+  	String res = null;
+    switch (score) {
+        case 10:
+        case 9:
+            res =  "优秀";   //不同的分数段就可以返回不同的等级了
+        		break;   //别忘了break，不然会贯穿到后面
+        case 8:
+        case 7:
+            res = "良好";
+        		break;
+        case 6:
+            res = "及格";
+        		break;
+        default:
+            res = "不及格";
+        		break;
+    }
+  	return res;
+}
+```
+
+Java 14 正式版本之后可以使用增强 switch 表达式，switch 带返回值，可以省略 break：
+
+```java
+public static String grade(int score){
+    score /= 10;  //既然分数段都是整数，那就直接整除10
+    return switch (score) {   //增强版switch语法
+        case 10, 9 -> "优秀";   //语法那是相当的简洁，而且也不需要我们自己考虑break或是return来结束switch了（有时候就容易忘记，这样的话就算忘记也没事了）
+        case 8, 7 -> "良好"; 
+        case 6 -> "及格";
+        default -> "不及格";
+    };
+}
+```
+
+最后编译出来还是和旧版一样。
+
+详细规则：
+
+```java
+var res = switch (obj) {   //这里和之前的switch语句是一样的，但是注意这样的switch是有返回值的，所以可以被变量接收
+    case [匹配值, ...] -> "优秀";   //case后直接添加匹配值，匹配值可以存在多个，需要使用逗号隔开，使用 -> 来返回如果匹配此case语句的结果
+    case ...   //根据不同的分支，可以存在多个case
+    default -> "不及格";   //注意，表达式要求必须涵盖所有的可能，所以是需要添加default的
+};
+```
+
+如果不立即返回：
+
+```java
+var res = switch (obj) {   //增强版switch语法
+    case [匹配值, ...] -> "优秀";
+    default -> {   //我们可以使用花括号来将整套逻辑括起来
+        //... 我是其他要做的事情
+        yield  "不及格";  //注意处理完成后需要返回最终结果，但是这样并不是使用return，而是yield关键字
+    }
+};
+```
+
+遗憾的是，还是不能进行区间匹配。
+
+### 文本块
+
+Java 15 正式开放，编写复杂的 SQL 语句或 HTML 代码的时候可以免去转义字符，方便编写。
+
+编译之后实际上是使用转义字符的。
+
+```java
+String sql =
+        """
+        select *
+        from student
+        where name = zxb
+        """;
+```
+
+### 新 instanceof
+
+旧写法：
+
+```java
+public class Student {
+    private final String name;
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Student) {   //首先判断是否为Student类型
+            Student student = (Student) obj;  //如果是，那么就类型转换
+            return student.name.equals(this.name);  //最后比对属性是否一样
+        }
+        return false;
+    }
+}
+```
+
+Java 16 新写法：
+
+```java
+public class Student {
+    private final String name;
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Student student) {   //在比较完成的屁股后面，直接写变量名字，而这个变量就是类型转换之后的
+            return student.name.equals(this.name);  //下面直接用，是不是贼方便
+        }
+        return false;
+    }
+}
+```
+
+### 空指针异常改进
+
+在 Java 14 之后会明确指出哪个变量出现了空指针异常，方便我们 debug。
+
+### 新类型记录
+
+继类、接口、枚举、注解之后的又一新类型来了，它的名字叫"记录"，在 Java 14中首次出场，这一出场，Lombok 的噩梦来了。Java 16 正式发布。
+
+在实际开发中，很多的类仅仅只是充当一个实体类罢了，保存的是一些不可变数据，比如我们从数据库中查询的账户信息，最后会被映射为一个实体类：
+
+```java
+@Data
+public class Account {   //使用Lombok，一个注解就搞定了
+    String username;
+    String password;
+}
+```
+
+Lombok可以说是简化代码的神器了，他能在编译时自动生成getter和setter、构造方法、toString()方法等实现，在编写这些实体类时，简直不要太好用，而这一波，官方也是看不下去了，于是自己也搞了一个记录类型。
+
+记录类型本质上也是一个普通的类，不过是final类型且继承自java.lang.Record抽象类的，它会在编译时，会自动编译出 `public get` `hashcode` 、`equals`、`toString` 等方法。
+
+```java
+//直接把字段写在括号中
+public record Account(String username, String password) {  
+
+}
+```
+
+## Java 17 新特性
+
+### 密封
+
+密封只允许指定类能对本类进行继承，密封类型的要求：
+
+- 可以基于普通类、抽象类、接口，也可以是继承自其他接抽象类的子类或是实现其他接口的类等。
+- 必须有子类继承，且不能是匿名内部类或是lambda的形式。
+- `sealed`写在原来`final`的位置，但是不能和`final`、`non-sealed`关键字同时出现，只能选择其一。
+- 继承的子类必须显式标记为`final`、`sealed`或是`non-sealed`类型。
+
+```java
+/*
+	在class关键字前添加sealed关键字，表示此类为密封类型，
+	permits 后面跟上允许继承的类型，多个子类使用逗号隔开
+*/
+public sealed [abstract] [class/interface] 类名 [extends 父类] [implements 接口, ...] permits [子类, ...]{
+		
+}
+```
 
 
 
