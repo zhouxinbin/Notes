@@ -36,7 +36,7 @@ $1≤M≤10$^6^
 - 当匹配中断时，可以向部分匹配表中查询部分匹配的子串的最长公共前后缀的前缀的尾下标。
 - 重新从前缀下一元素与主串待匹配的元素与进行比较。
 
-![image-20240224005839066](https://cdn.jsdelivr.net/gh/chousinbin/Image/202402240058135.png)
+![image-20240224005839066](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202402240058135.png)
 
 ### 解题代码
 

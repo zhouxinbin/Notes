@@ -1,6 +1,6 @@
 # Github图床
 
-![image-20220807225452369](https://cdn.jsdelivr.net/gh/chousinbin/Image/Picgo%E9%85%8D%E7%BD%AE.png)
+![image-20220807225452369](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/Picgo%E9%85%8D%E7%BD%AE.png)
 
 ## token获取方法
 
@@ -15,7 +15,7 @@ https://cdn.jsdelivr.net/gh/username/repo
 ```json
  "github": {
     "branch": "master",
-    "customUrl": "https://cdn.jsdelivr.net/gh/chousinbin/Image",
+    "customUrl": "https://cdn.jsdelivr.net/gh/zhouxinbin/Image",
     "path": "",
     "repo": "chousinbin/Image",
     "token": "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"
@@ -26,7 +26,7 @@ https://cdn.jsdelivr.net/gh/username/repo
 
 在PicGO里面手动配置代理
 
-![image-20240124161901946](https://cdn.jsdelivr.net/gh/chousinbin/Image/202401241619980.png)
+![image-20240124161901946](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401241619980.png)
 
 ## MacOS 安装后提示文件损坏
 

@@ -170,7 +170,7 @@ $d_{end-end} = n(d_{proc} + d_{queue} + d_{trans} + d_{prop})$, n = the number o
 
 (N + Q - 1)L / R, Q = links, N = packets
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202401061803000.png" alt="image-20240106180347922" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401061803000.png" alt="image-20240106180347922" style="zoom:50%;" />
 
 ### packet loss
 

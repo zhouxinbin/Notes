@@ -100,7 +100,7 @@ IAS,1000 memory locations,calls **Words**. 1Words 40 binary digits,hava left and
 each instruction consisting of an 8-bit operation code **(opcode)** specifying the operation to be
 performed and a 12-bit **address** designating one of the words in memory.
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/instruction word.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/instruction word.png)
 
 Opcode操作码，操作码让CPU执行对应的操作。Address，指令携带的数据的地址。
 
@@ -158,11 +158,11 @@ BreakPoint断点
 
 打印完I/O给CPU发送中断请求信号，暂停执行第N+M条指令，去执行打印收尾工作的程序，结束后执行第N+M+1条指令。
 
-![202210061529084](https://cdn.jsdelivr.net/gh/chousinbin/Image/202210061529084.png)
+![202210061529084](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202210061529084.png)
 
 
 
-![2](https://cdn.jsdelivr.net/gh/chousinbin/Image/202210111638598.png)
+![2](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202210111638598.png)
 
 
 
@@ -424,7 +424,7 @@ Redundant Array of Independent Disks
 
 ## DMA
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/202211151610493.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202211151610493.png)
 
 ## 中断
 
@@ -480,7 +480,7 @@ logic and arithmetic
 
 ## elements
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/202211171420780.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202211171420780.png)
 
 operand操作数：opcode操作码要操作的数据
 

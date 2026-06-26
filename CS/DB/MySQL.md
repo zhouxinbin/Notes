@@ -2,7 +2,7 @@
 
 ## 数据库三层结构
 
-![image-20230701215552974](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307012155127.png)
+![image-20230701215552974](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307012155127.png)
 
 ### DBMS
 

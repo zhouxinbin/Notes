@@ -21,7 +21,7 @@ JDBC 是使用 Java 语言操作关系型数据库的一套 API。全称 Java Da
 
    Driver类里面静态代码块调用DriverManager.registDriver()进行注册驱动
 
-   <img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202307061344419.png" alt="image-20230706134458362" style="zoom:33%;" />
+   <img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307061344419.png" alt="image-20230706134458362" style="zoom:33%;" />
 
    MySQL jar包5版本后, 也可以省略注册驱动的代码, 因为驱动包/services/java.sql.Driver里面记录了驱动类的名称
 
@@ -81,7 +81,7 @@ public class HelloJDBC {
 
 JDK 1.5 之后支持自动注册驱动：
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202509291620123.png" alt="image-20250929162039068" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202509291620123.png" alt="image-20250929162039068" style="zoom:33%;" />
 
 ## 使用配置文件
 

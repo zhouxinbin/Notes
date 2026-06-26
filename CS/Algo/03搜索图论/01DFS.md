@@ -4,7 +4,7 @@
 
 **所有的递归都可以转换成递归搜索树**
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202210221136934.png" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202210221136934.png" style="zoom:50%;" />
 
 ## 简单斐波那契
 

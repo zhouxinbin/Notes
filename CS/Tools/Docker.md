@@ -1,6 +1,6 @@
 # Docker
 
-![image-20240418164012763](https://cdn.jsdelivr.net/gh/chousinbin/Image/202404181640887.png)
+![image-20240418164012763](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202404181640887.png)
 
 # 镜像管理
 

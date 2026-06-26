@@ -61,7 +61,7 @@ $everything\ is\ local$
 
 ## Git 工作机制
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/git工作机制.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/git工作机制.png)
 
 只有把代码提交到本地库，才会产生历史版本。
 
@@ -117,7 +117,7 @@ git config --global user.email 用户邮箱
 
 ### 查看用户签名
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/查看用户签名.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/查看用户签名.png)
 
 注意：
 
@@ -218,13 +218,13 @@ Date:   Wed Jul 20 21:57:31 2022 +0800
 
 ### 修改文件
 
-![image-20220711220754217-165754847572118](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6.png)
+![image-20220711220754217-165754847572118](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6.png)
 
 修改`newfile`文件第一行尾添加了`222`。
 
 ### 修改后的状态
 
-![image-20220711220916755-165754855792719](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E4%BF%AE%E6%94%B9%E5%90%8E%E7%9A%84%E7%8A%B6%E6%80%81.png)
+![image-20220711220916755-165754855792719](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E4%BF%AE%E6%94%B9%E5%90%8E%E7%9A%84%E7%8A%B6%E6%80%81.png)
 
 再次查看状态，我们发现有提示`modified:文件名`，这种状态说明此文件被修改过了。
 
@@ -232,13 +232,13 @@ Date:   Wed Jul 20 21:57:31 2022 +0800
 
 ### 添加到暂存区后的状态
 
-![image-20220711221322293-165754880347220](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%9A%82%E5%AD%98%E5%8C%BA%E5%90%8E%E7%9A%84%E7%8A%B6%E6%80%81.png)
+![image-20220711221322293-165754880347220](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%9A%82%E5%AD%98%E5%8C%BA%E5%90%8E%E7%9A%84%E7%8A%B6%E6%80%81.png)
 
 添加到暂存区后，再次查看状态，绿色状态表明：当前文件是被修改且添加到暂存区后未被提交到本地库的文件。
 
 ### 提交到本地库
 
-![image-20220711221637309-165754899852521](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%90%8E%E7%9A%84%E7%8A%B6%E6%80%81.png)
+![image-20220711221637309-165754899852521](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%90%8E%E7%9A%84%E7%8A%B6%E6%80%81.png)
 
 提交到本地库后返回操作者提交的版本信息、文件修改的数量、行数的插入数与删除数。
 
@@ -248,7 +248,7 @@ Date:   Wed Jul 20 21:57:31 2022 +0800
 
 ### 提交到本地库后的状态
 
-![image-20220711222302344-165754938352122](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%BA%93%E5%90%8E%E7%9A%84%E7%8A%B6%E6%80%81.png)
+![image-20220711222302344-165754938352122](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%BA%93%E5%90%8E%E7%9A%84%E7%8A%B6%E6%80%81.png)
 
 世界恢复了原有的平静。
 
@@ -262,15 +262,15 @@ git reset --hard 版本号
 
 先找到版本号（前7位就可以）
 
-![image-20220711223246142-165754996722826](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97%E4%BF%A1%E6%81%AF%E6%9F%A5%E6%89%BE%E7%89%88%E6%9C%AC%E5%8F%B7.png)
+![image-20220711223246142-165754996722826](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97%E4%BF%A1%E6%81%AF%E6%9F%A5%E6%89%BE%E7%89%88%E6%9C%AC%E5%8F%B7.png)
 
 选中要穿梭到的版本号，右击复制，执行版本穿梭命令。
 
-![image-20220711223518949-165755011993527](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E6%89%A7%E8%A1%8C%E7%A9%BF%E6%A2%AD%E5%91%BD%E4%BB%A4.png)
+![image-20220711223518949-165755011993527](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E6%89%A7%E8%A1%8C%E7%A9%BF%E6%A2%AD%E5%91%BD%E4%BB%A4.png)
 
 查看穿梭后的日志信息
 
-![image-20220711223609404-165755017064528](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E7%A9%BF%E6%A2%AD%E5%90%8E%E7%9A%84%E6%97%A5%E5%BF%97%E4%BF%A1%E6%81%AF.png)
+![image-20220711223609404-165755017064528](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E7%A9%BF%E6%A2%AD%E5%90%8E%E7%9A%84%E6%97%A5%E5%BF%97%E4%BF%A1%E6%81%AF.png)
 
 明显看到当前指向`first version`版本。最顶行多出一行日志记录我们进行了版本穿梭。说明**版本穿梭也会被Git的日志记录，但版本号不会新增。**
 
@@ -301,7 +301,7 @@ git reset --hard 版本号
 git branch -v
 ```
 
-![image-20220711231102512-165755226339829](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF.png)
+![image-20220711231102512-165755226339829](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF.png)
 
 ### 创建分支
 
@@ -311,7 +311,7 @@ git branch 分支名
 
 创建一个名为`hot-fix`的紧急修复分支。
 
-![image-20220711231323977-165755240493430](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF.png)
+![image-20220711231323977-165755240493430](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF.png)
 
 创建的新分支，会克隆当前分支的的所有状态和信息，比如：历史版本信息等等。
 
@@ -321,7 +321,7 @@ git branch 分支名
 git checkout 分支名
 ```
 
-![image-20220711231543838-165755254481331](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%88%87%E6%8D%A2%E5%88%86%E6%94%AF.png)
+![image-20220711231543838-165755254481331](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%88%87%E6%8D%A2%E5%88%86%E6%94%AF.png)
 
 切换成功后会返回切换成功信息，下一个提示符的蓝色括号由原来的`master`变成了`hot-fix`。
 
@@ -329,13 +329,13 @@ git checkout 分支名
 
 ### 分支修改文件
 
-![image-20220711233153248-165755351431233](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%88%86%E6%94%AF%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6.png)
+![image-20220711233153248-165755351431233](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%88%86%E6%94%AF%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6.png)
 
 直接调用`vim`对最新版本的`newfile.md`文件进行修改。修改之后的状态与在同一个分支下修改文件相似，这里省略图文介绍，详细参考上文`3.8修改文件`。之后的步骤是：添加到暂存区、提交到本地库。
 
 在修改分支提交的版本我们命名为`hot-fix first version`。
 
-![image-20220711232825334-165755330625032](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%88%86%E6%94%AF%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4.png)
+![image-20220711232825334-165755330625032](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%88%86%E6%94%AF%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4.png)
 
 ### 合并分支
 
@@ -347,7 +347,7 @@ git merge 分支名
 
 执行合并命令
 
-![image-20220711233445810-165755368669935](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF.png)
+![image-20220711233445810-165755368669935](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF.png)
 
 ### 冲突合并
 
@@ -359,44 +359,44 @@ git merge 分支名
 
 我们先把`master`中的`newfile`最后一行尾加入`master test`。再进行添加和提交。版本命名`master test`。
 
-![image-20220711234546010-165755434724336](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B61.png)
+![image-20220711234546010-165755434724336](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B61.png)
 
 再把分支切换到`hot-fix`，此时内容还未受到`master`分支的修改而修改。
 
-![image-20220711235010268-165755461144537](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B62.png)
+![image-20220711235010268-165755461144537](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B62.png)
 
 这时我们把`hot-fix`中的`newfile`的倒数第二行末加上`hot-fix test`。
 
-![image-20220711235533164-165755493419538](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B63.png)
+![image-20220711235533164-165755493419538](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B63.png)
 
 然后添加、提交。版本名为`hotfix-version`。切换回`master`分支，执行合并分支。
 
-![image-20220712000055116-165755525709140](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B65.png)
+![image-20220712000055116-165755525709140](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B65.png)
 
 此时报错并且当前状态为在`master`分支上，并且正在合并分支，需要我们人为进入**vim**选择合并。
 
-![image-20220712000249139-165755537016641](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B66.png)
+![image-20220712000249139-165755537016641](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B66.png)
 
 <<<<<< HEAD 与`======`之间的内容表示是当前**mater**分支的修改内容。
 `=======`与>>>>>>> **hot-fix**之间的内容表示**hot-fix**分支的修改内容。
 
 我们需要手动修改内容并且删除多余的提示符号。
 
-![image-20220712000625610-165755558659742](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B67.png)
+![image-20220712000625610-165755558659742](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B67.png)
 
 上图是人工手动修改合并后的信息，保留了两个处在不同分支的操作者对同一文件的修改。
 
 保存完文件之后，还要把修改完的文件添加到暂存区以及提交到工作区的一系列操作，注意在**手动合并后的提交到本地库的命令中不需要带文件名**。
 
-![image-20220712001330058-165755601223843](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B68.png)
+![image-20220712001330058-165755601223843](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B68.png)
 
 提交完成后，状态变为`master`。至此我们通过手动合并分支解决了代码冲突。
 
-![image-20220712001740176-165755626155745](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B69.png)
+![image-20220712001740176-165755626155745](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B69.png)
 
 注意：合并分支只会修改合并到分支的文件的内容，从哪合并来的哪个分支通过合并操作不会被修改。
 
-![image-20220712001648472-165755620941644](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B610.png)
+![image-20220712001648472-165755620941644](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%86%B2%E7%AA%81%E5%90%88%E5%B9%B610.png)
 
 # Github 远程库操作
 
@@ -604,7 +604,7 @@ ssh -T git@github.com
 - 打开 Clash 的TUN Mode
 - 无需终端执行代理命令和编写配置文件
 
-![image-20240126210735365](https://cdn.jsdelivr.net/gh/chousinbin/Image/202401262107425.png)
+![image-20240126210735365](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401262107425.png)
 
 # Git Bash
 
@@ -612,7 +612,7 @@ ssh -T git@github.com
 
 1. 打开设置 - 添加新的配置文件 - 复制配置文件 Windows PowerShell - 复制
 
-   ![image-20240126213757459](https://cdn.jsdelivr.net/gh/chousinbin/Image/202401262137511.png)
+   ![image-20240126213757459](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401262137511.png)
 
 2. 名称：Git Bash
 
@@ -622,6 +622,6 @@ ssh -T git@github.com
 
 5. 图标：`D:\ProgramDev\Git\mingw64\share\git\git-for-windows.ico`
 
-   ![](https://cdn.jsdelivr.net/gh/chousinbin/Image/202401262138495.png)
+   ![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401262138495.png)
 
 6. 保存

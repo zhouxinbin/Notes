@@ -282,7 +282,7 @@ A process is an executing program
 
 ### Process state: Dynamic
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202304241132201.png" alt="image-20230424113249470" style="zoom: 25%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202304241132201.png" alt="image-20230424113249470" style="zoom: 25%;" />
 
 #### Ready
 
@@ -382,7 +382,7 @@ TCB 数量级比PCB小 , 占用资源少, 切换代价小
 
 ### Image
 
-![IMG_0315](https://cdn.jsdelivr.net/gh/chousinbin/Image/202304271136361.JPG)
+![IMG_0315](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202304271136361.JPG)
 
 ## 02x06 Thread Level
 
@@ -423,7 +423,7 @@ a situation if access critical resource , find result depend on who run next (ex
 
 ## 02x08 Semaphores
 
-![image-20230708170700747](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081707019.png)
+![image-20230708170700747](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081707019.png)
 
 等待队列指针的值为负数, 代表有几个进程正在等待该资源
 
@@ -433,57 +433,57 @@ a situation if access critical resource , find result depend on who run next (ex
 
 Request Resource
 
-![image-20230708175449134](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081754344.png)
+![image-20230708175449134](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081754344.png)
 
 ### V(s)
 
 Release Resource
 
-![image-20230708175500863](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081755073.png)
+![image-20230708175500863](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081755073.png)
 
 ### Mutual exclusive
 
 互斥
 
-![image-20230708175431389](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081754628.png)
+![image-20230708175431389](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081754628.png)
 
-![image-20230708175919345](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081759590.png)
+![image-20230708175919345](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081759590.png)
 
 ### Synchronization Semaphores 
 
 同步信号量
 
-![image-20230708180227814](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081802035.png)
+![image-20230708180227814](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081802035.png)
 
-![image-20230708181208979](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081812218.png)
+![image-20230708181208979](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081812218.png)
 
-![image-20230708181406431](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081814639.png)
+![image-20230708181406431](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081814639.png)
 
-![image-20230708181419369](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081814563.png)
+![image-20230708181419369](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081814563.png)
 
 ### Summary
 
-![image-20230708181446746](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081814011.png)
+![image-20230708181446746](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081814011.png)
 
-![image-20230708181705430](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081817796.png)
+![image-20230708181705430](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081817796.png)
 
-![image-20230511105002771](https://cdn.jsdelivr.net/gh/chousinbin/Image/202305111050048.png)
+![image-20230511105002771](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202305111050048.png)
 
 ## 02x10 Classical IPC
 
 ### Producer - Consumer
 
-![image-20230708184959150](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081849380.png)
+![image-20230708184959150](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081849380.png)
 
-![image-20230708185700796](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081857029.png)
+![image-20230708185700796](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081857029.png)
 
 ### Writer - Reader
 
-![image-20230708190125007](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081901301.png)
+![image-20230708190125007](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081901301.png)
 
-![image-20230708190638786](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081906994.png)
+![image-20230708190638786](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081906994.png)
 
-![image-20230708190622672](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307081906894.png)
+![image-20230708190622672](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307081906894.png)
 
 ## 02x11 Scheduling
 
@@ -618,9 +618,9 @@ m事件的个数, C为cost, P为peried
 
 ## 02x12 Thread Scheduling
 
-![image-20230708201555085](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307082015339.png)
+![image-20230708201555085](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307082015339.png)
 
-![image-20230708201706903](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307082017162.png)
+![image-20230708201706903](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307082017162.png)
 
 ## 02x13 Deadlock
 
@@ -648,7 +648,7 @@ request (use semaphore in wrong order) -> use -> release
 
 ### Solution 
 
-![image-20230710152850720](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307101528995.png)
+![image-20230710152850720](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307101528995.png)
 
 ### Deadlock Prevention
 
@@ -669,13 +669,13 @@ request (use semaphore in wrong order) -> use -> release
 
 #### Banker's algorithm with single- resource
 
-![image-20230710151032993](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307101510352.png)
+![image-20230710151032993](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307101510352.png)
 
 #### Banker's algorithm with multi - resource
 
-![image-20230710151056106](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307101510332.png)
+![image-20230710151056106](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307101510332.png)
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202305221136731.png" alt="image-20230522113604444" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202305221136731.png" alt="image-20230522113604444" style="zoom:33%;" />
 
 $E_j = \sum_{1}^{n} C_{ij} + A_j$
 
@@ -693,7 +693,7 @@ $E_j = \sum_{1}^{n} C_{ij} + A_j$
 | F    | W    | S     |
 | G    | V    | U     |
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202305221138201.png" alt="image-20230522113855109" style="zoom: 33%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202305221138201.png" alt="image-20230522113855109" style="zoom: 33%;" />
 
 #### Deadlock Detection with Multiple Resources of Each Type
 
@@ -721,13 +721,13 @@ Memory space : in memory
 
 #### static
 
-![image-20230710163918767](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307101639974.png)
+![image-20230710163918767](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307101639974.png)
 
 #### dynamic
 
 动态调度,地址是浮动的,提高内存效率
 
-![image-20230710165000283](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307101650517.png)
+![image-20230710165000283](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307101650517.png)
 
 ### address protected : 
 
@@ -756,11 +756,11 @@ Memory space : in memory
 
 #### Link List & Sequence
 
-![image-20230710170534844](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307101705095.png)
+![image-20230710170534844](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307101705095.png)
 
 #### Bitmap
 
-![image-20230710170549492](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307101705795.png)
+![image-20230710170549492](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307101705795.png)
 
 ### Search Algorithm for Partition
 
@@ -788,7 +788,7 @@ Memory space : in memory
 
 给内存分块, 进程按块存储
 
-![image-20230710172846911](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307101728136.png)
+![image-20230710172846911](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307101728136.png)
 
 碎片产生少, 程序在内存能离散的存放, 耗时
 
@@ -800,11 +800,11 @@ Memory space : in memory
 
 创建Page Table, 并把table的起始地址和长度加载到进程的PCB中, 这样运行程序时, 就能找到对应的地址关系, 硬盘中的页和内存的块在页表中是
 
-![image-20230710173528710](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307101735919.png)
+![image-20230710173528710](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307101735919.png)
 
 ### Address  translation
 
-![image-20230711103905914](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111039160.png)
+![image-20230711103905914](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111039160.png)
 
 ## 03x04 Memory Enlarge
 
@@ -812,15 +812,15 @@ Memory space : in memory
 
 ### Overlays
 
-![image-20230711104557045](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111045277.png)
+![image-20230711104557045](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111045277.png)
 
 ### Swapping
 
-![image-20230711104813622](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111048844.png)
+![image-20230711104813622](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111048844.png)
 
 ### Virtual Memory
 
-![image-20230711105242081](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111052295.png)
+![image-20230711105242081](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111052295.png)
 
 ## Demand Paging Management 请求页式
 
@@ -914,7 +914,7 @@ CPU communicate with control register and buffer need addressing technology
 2. Memory - Mapped I/O : I/O映射在内存里, 对总线的抢占只有内存抢占
 3. Hybrid 
 
-![image-20230711144921434](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111449634.png)
+![image-20230711144921434](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111449634.png)
 
 ## 04x02 I/O control
 
@@ -1012,9 +1012,9 @@ driver control device, running in kernel
 
 低级分区针对的是硬盘本身结构
 
-![image-20230711155205499](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111552714.png)
+![image-20230711155205499](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111552714.png)
 
-![image-20230711155242682](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111552922.png)
+![image-20230711155242682](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111552922.png)
 
 #### High level formatting
 
@@ -1119,13 +1119,13 @@ the end of the MBR is the partition table, which give the start and end address 
 
 ### implement files
 
-![image-20230711181132138](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111811403.png)
+![image-20230711181132138](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111811403.png)
 
-![image-20230711181116554](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111811811.png)
+![image-20230711181116554](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111811811.png)
 
-![image-20230711181100813](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111811131.png)
+![image-20230711181100813](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111811131.png)
 
-![image-20230711181052068](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111810411.png)
+![image-20230711181052068](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111810411.png)
 
 ## 05x04 Disk Space Management
 
@@ -1135,7 +1135,7 @@ the end of the MBR is the partition table, which give the start and end address 
 
 2. bitmap
 
-![image-20230711182206692](https://cdn.jsdelivr.net/gh/chousinbin/Image/202307111822964.png)
+![image-20230711182206692](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202307111822964.png)
 
 物理转储和逻辑转储是两种数据备份和存储的方法，通常用于计算机系统或数据库管理中。
 

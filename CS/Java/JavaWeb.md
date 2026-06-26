@@ -689,11 +689,11 @@ span {
 
 浏览器打开 检查，console 栏报错信息；
 
-![image-20250812140834155](https://cdn.jsdelivr.net/gh/chousinbin/Image/202508121408214.png)
+![image-20250812140834155](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202508121408214.png)
 
 可以在浏览器中定位错误代码。
 
-![image-20250812140910255](https://cdn.jsdelivr.net/gh/chousinbin/Image/202508121409280.png)
+![image-20250812140910255](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202508121409280.png)
 
 ## 调试代码
 
@@ -2250,7 +2250,7 @@ last-modified: Wed, 20 Aug 2025 15:24:22 GMT
 
 ## IDEA 创建 Maven Web 项目
 
-![image-20250825214435382](https://cdn.jsdelivr.net/gh/chousinbin/Image/202508252144437.png)
+![image-20250825214435382](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202508252144437.png)
 
 高级设置的三个参数为 Maven 项目的三要素，起唯一标识的作用。换句话说，我们自己的项目也有机会上传到 MavenHub 供其他开发者调用。
 
@@ -2398,7 +2398,7 @@ servlet 的相对路径起始点是当前请求中前端页面所在位置
 - 浏览器发送请求时，请求头中携带自己的 Cookie。
 - Cookie 总数没有限制，每个域名的 Cookie 数量和每个 Cookie 的大小是又限制的，不适合存储数据量大的信息。
 
-![image-20250901204559232](https://cdn.jsdelivr.net/gh/chousinbin/Image/202509012045275.png)
+![image-20250901204559232](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202509012045275.png)
 
 ### Cookie 作用
 
@@ -3153,7 +3153,7 @@ Filter 过滤器时 JavaEE 的规范，是一个接口。作用是拦截请求�
 
 ## Filter 架构
 
-![image-20250907110101863](https://cdn.jsdelivr.net/gh/chousinbin/Image/202509071101905.png)
+![image-20250907110101863](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202509071101905.png)
 
 ## Filter QS
 
@@ -3673,7 +3673,7 @@ Ajax 请求优点：
 
 ## Ajax 数据通信方式
 
-![image-20250914182534834](https://cdn.jsdelivr.net/gh/chousinbin/Image/202509141825940.png)
+![image-20250914182534834](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202509141825940.png)
 
 ## JS 原生 Ajax
 

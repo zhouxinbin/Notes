@@ -749,7 +749,7 @@ do {
 
 ####  内存结构
 
-![image-20230131172144556](https://cdn.jsdelivr.net/gh/chousinbin/Image/202301311721656.png)
+![image-20230131172144556](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202301311721656.png)
 
 ### 注意事项
 
@@ -845,11 +845,11 @@ public class ArrayAdd {
 
 ### 内存存在形式
 
-![image-20230131201526665](https://cdn.jsdelivr.net/gh/chousinbin/Image/202301312015741.png)
+![image-20230131201526665](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202301312015741.png)
 
-![image-20230201133158259](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302011331333.png)
+![image-20230201133158259](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302011331333.png)
 
-![image-20230201140237179](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302011402259.png)
+![image-20230201140237179](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302011402259.png)
 
 ### 样例代码
 
@@ -1007,7 +1007,7 @@ class Tools {
 
 ### 调用机制
 
-![image-20230201155636166](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302011556274.png)
+![image-20230201155636166](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302011556274.png)
 
 从方法返回数据之后，方法在栈中就被释放了。
 
@@ -1223,7 +1223,7 @@ class A1 {
 
 ### 内存结构
 
-![image-20230207162823426](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302071628517.png)
+![image-20230207162823426](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302071628517.png)
 
 ```java
 public class Recursion01 {
@@ -1520,7 +1520,7 @@ class People {
 
 ### 内存结构
 
-![image-20230212135009596](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302121350749.png)
+![image-20230212135009596](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302121350749.png)
 
 
 
@@ -1530,7 +1530,7 @@ class People {
 
 1. 区分相同名字的类
 
-   ![image-20230218190727421](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302181907481.png)
+   ![image-20230218190727421](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302181907481.png)
 
 2. 当类很多时, 可以很好地管理类
 
@@ -1552,7 +1552,7 @@ package的作用是声明当前类所在的包, 需要放在类的最上面, 一
 
 #### 结构
 
-![image-20230218191132409](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302181911454.png)
+![image-20230218191132409](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302181911454.png)
 
 ### 包的本质
 
@@ -1773,7 +1773,7 @@ class Person {
 
 继承可以解决代码复用. 当多个类存在相同的属性和方法时, 可以从这些类中抽象出父类, 在父类中定义这些相同的属性和方法, 所有的子类不需要重新定义这些属性和方法, 只需要通过extends来声明继承父类即可.
 
-![image-20230219183620534](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302191836624.png)
+![image-20230219183620534](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302191836624.png)
 
 上图中D类也可以是B类的子类
 
@@ -1805,7 +1805,7 @@ class 子类名 extends 父类名 {
 
 4. 子类最多只能继承一个父亲, 即java是**单继承机制**
 
-   ![image-20230219215919170](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302192159237.png)
+   ![image-20230219215919170](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302192159237.png)
 
    如何让A继承B和C ? 让B继承C, A继承B
 
@@ -1859,7 +1859,7 @@ class Son extends Father {
 
 #### 内存结构
 
-![image-20230220101217755](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302201012833.png)
+![image-20230220101217755](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302201012833.png)
 
 如果某一个属性是私有的, 那么在内存中也是存在的, 虽然主类访问不到, 但是可以在子类中创建公有方法, 通过继承间接访问
 
@@ -2377,7 +2377,7 @@ Object类中声明的结构(属性,方法)就具有通用性,
 
 Object类中没有声明属性, 提供了一个空参的构造器
 
-![image-20230219213901435](https://cdn.jsdelivr.net/gh/chousinbin/Image/202302192139501.png)
+![image-20230219213901435](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202302192139501.png)
 
 
 
@@ -2495,7 +2495,7 @@ public String toString() {
 
 #### 内存结构
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202303062106497.png" alt="image-20230306210648275" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202303062106497.png" alt="image-20230306210648275" style="zoom:50%;" />
 
 #### 用处
 
@@ -2544,13 +2544,13 @@ public static void main(String[] args)
 
 4. main()方法接收String类型的数组参数, 其中保存**执行Java命令时传递给所运行的类**的参数
 
-   <img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202303071949201.png" alt="image-20230307194914055" style="zoom: 33%;" />
+   <img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202303071949201.png" alt="image-20230307194914055" style="zoom: 33%;" />
 
 #### main()动态传值
 
 > 上面讲到用命令行动态给main()传值, 接下来介绍IDEA用给main()动态传值
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202303072014996.png" alt="image-20230307201454887" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202303072014996.png" alt="image-20230307201454887" style="zoom:50%;" />
 
 #### 调用
 
@@ -4025,7 +4025,7 @@ Java语言中,  将程序执行中发生的不正常情况称为异常. 语法�
 
 ### 异常体系图
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/202303241111492.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202303241111492.png)
 
 ## 运行时异常
 
@@ -4201,7 +4201,7 @@ public class TryFinally {
 
 将发生的异常抛给上一级调用者, 顶级调用者为JVM, 对于一个异常处理, 不是try-catch-finally就是throws. 如果在代码中没有显示的处理方法, 那么就会默认使用隐式的异常处理, 即为throws, 最终throws到JVM, 而JVM作为最高级调用者, 他就会简单的输出异常信息, 中断程序.
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202304021340954.png" alt="image-20230402134033727" style="zoom: 33%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202304021340954.png" alt="image-20230402134033727" style="zoom: 33%;" />
 
 #### 细节
 
@@ -4615,7 +4615,7 @@ public class Test05 {
 }
 ```
 
-![String.drawio](https://cdn.jsdelivr.net/gh/chousinbin/Image/202411211405503.png)
+![String.drawio](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202411211405503.png)
 
 ## StringBuffer 类
 
@@ -5833,7 +5833,7 @@ final Node<K,V>[] resize() {
 
 - 除此之外，类似的 HashMap 中还有内部类 KeySet 和 Values 集合，以分别方便遍历 Key 和 Value。
 
-![HashMap$Node.drawio](https://cdn.jsdelivr.net/gh/chousinbin/Image/202411182218771.png)
+![HashMap$Node.drawio](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202411182218771.png)
 
 ### 常用方法
 
@@ -5975,7 +5975,7 @@ public class Map03 {
 
 ## 集合选型
 
-![集合选型](https://cdn.jsdelivr.net/gh/chousinbin/Image/202411202156651.png)
+![集合选型](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202411202156651.png)
 
 老韩强调：阅读源码的能力！
 
@@ -6308,11 +6308,11 @@ class T implements Runnable {
 
 ## 线程声明周期
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202411241729440.png" alt="线程" style="zoom: 15%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202411241729440.png" alt="线程" style="zoom: 15%;" />
 
 ### 线程状态
 
-![1615964642254_线程状态转换图.png](https://cdn.jsdelivr.net/gh/chousinbin/Image/202411242006114.png)
+![1615964642254_线程状态转换图.png](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202411242006114.png)
 
 1. NEW：尚未启动的线程处于此状态。
 2. RUNNABLE：在 Java 虚拟机中执行的线程处于此状态。RUNNABLE 中有 Ready 和 Running 两种状态。

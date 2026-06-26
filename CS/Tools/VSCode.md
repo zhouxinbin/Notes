@@ -19,15 +19,15 @@ int main()
 
 点击左侧的调试按钮->创建`launch.json`文件 
 
-![1620](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E5%88%9B%E5%BB%BAlaunch.json%E6%96%87%E4%BB%B6.png)
+![1620](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E5%88%9B%E5%BB%BAlaunch.json%E6%96%87%E4%BB%B6.png)
 
 选择`C++(GDB/LLDB)` 
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/选择C++GDB.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/选择C++GDB.png)
 
  选择`gcc.exe-生成和调试活动文件` 
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/选择gcc.exe-生成调试文件.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/选择gcc.exe-生成调试文件.png)
 
  返回工作区文件目录，发现生成了.vscode文件夹，`tasks`用于编译，`launch`用于执行编译后的文件。
 
@@ -142,7 +142,7 @@ int main()
 
 点击`Edit in settings.json`打开配置项，由于Code Runner中配置文件较多，我们只修改相关部分即可 
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/202207181607668.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202207181607668.png)
 
  （1）将命令
 
@@ -170,13 +170,13 @@ int main()
 
 最后在工作区新建文件夹**build**，作为**Test**文件子项，确定好文件从属关系。 
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/202207181604118.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202207181604118.png)
 
 ### 测试
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/202207181605389.gif)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202207181605389.gif)
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/202207181605600.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202207181605600.png)
 
 原帖：https://cloud.tencent.com/developer/article/2015634
 
@@ -184,7 +184,7 @@ int main()
 
 如图所示, 项目目录为algorithm, exe文件统一生成后存放在algorithm/build/中, 可在主目录任意创建子目录保存cpp源文件
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202311040001985.png" alt="image-20231104000133895" style="zoom: 50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202311040001985.png" alt="image-20231104000133895" style="zoom: 50%;" />
 
 #### 实现
 

@@ -5,9 +5,9 @@
 - 每条路径存储一个字符串；
 - 引入布尔变量，标记每个字符串的结尾的节点，表示存在以当前结点为结尾的字符串；
 
-![31041_aed49a42ad-Trie2](https://cdn.jsdelivr.net/gh/chousinbin/Image/202401290032400.PNG)
+![31041_aed49a42ad-Trie2](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401290032400.PNG)
 
-![未命名图片](https://cdn.jsdelivr.net/gh/chousinbin/Image/202401290032500.png)
+![未命名图片](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401290032500.png)
 
 ## Tire 字符串统计
 

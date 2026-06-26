@@ -22,7 +22,7 @@ Linux下开发项目：JavaEE、大数据、Python、PHP、Ｃ/C++
 
 Tux企鹅
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/format,f_jpg.jpeg" alt="Tux" style="zoom: 33%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/format,f_jpg.jpeg" alt="Tux" style="zoom: 33%;" />
 
 #### Linux作者
 
@@ -68,7 +68,7 @@ VMware[下载地址](https://download3.vmware.com/software/wkst/file/VMware-work
 
 虚拟机快照就类似于版本存档，在虚拟机的某个时间节点设置一个快照，在后期阶段出现系统异常是我们就可以回退到之前的快照。快照之间可以任意穿梭。
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/虚拟机快照.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/虚拟机快照.png)
 
 #### 虚拟机删除与迁移
 
@@ -167,7 +167,7 @@ Kdump是一个内核崩溃转储机制。在系统崩溃时，会捕获系统信
 
 前三个字段相同的IP地址，属于同一网段。
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/虚拟机网络连接的三种模式.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/虚拟机网络连接的三种模式.png)
 
 #### 桥接模式
 
@@ -185,7 +185,7 @@ Kdump是一个内核崩溃转储机制。在系统崩溃时，会捕获系统信
 
 ### 2.4Linux开机多个选项
 
-![image-20220716184225846](https://cdn.jsdelivr.net/gh/chousinbin/Image/image-20220716184225846.png)
+![image-20220716184225846](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/image-20220716184225846.png)
 
 前面几个选项正常启动，最后一个选项急救模式启动（系统出项问题不能正常启动时使用并修复系统）。在CentOS更新后,并不会自动删除旧内核。所以在启动选项中会有多个内核选项,可以手动使用以下命令删除多余的内核:
 
@@ -212,7 +212,7 @@ su回车
 uname -a
 ```
 
-![image-20220716182109935](https://cdn.jsdelivr.net/gh/chousinbin/Image/image-20220716182109935.png)
+![image-20220716182109935](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/image-20220716182109935.png)
 
 #### 查看系统中全部的内核RPM包
 
@@ -220,7 +220,7 @@ uname -a
 rpm -qa | grep kernel
 ```
 
-![image-20220716182158303](https://cdn.jsdelivr.net/gh/chousinbin/Image/image-20220716182158303.png)
+![image-20220716182158303](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/image-20220716182158303.png)
 
 #### 删除旧内核的RPM包
 
@@ -228,7 +228,7 @@ rpm -qa | grep kernel
 yum remove kernel-
 ```
 
-![image-20220716182250073](https://cdn.jsdelivr.net/gh/chousinbin/Image/image-20220716182250073.png)
+![image-20220716182250073](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/image-20220716182250073.png)
 
 #### 重启系统
 
@@ -356,7 +356,7 @@ Linux服务器是开发小组共享，Linux服务器是公网上远程的，并�
 # ifconfig
 ```
 
-![image-20220719235654490](https://cdn.jsdelivr.net/gh/chousinbin/Image/202207192356817.png)
+![image-20220719235654490](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202207192356817.png)
 
 #### 检查IP能否ping通
 
@@ -374,17 +374,17 @@ ping IP
    1. win+r运行regedit打开注册表
    2. 按路径\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MpsSvc 找到start，参数修改为“4”，确定，重启电脑。
 
-![img](https://cdn.jsdelivr.net/gh/chousinbin/Image/202207192351272.webp)
+![img](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202207192351272.webp)
 
 2. 开启Device Install Service 、Device Setup Service 服务
 
-![img](https://cdn.jsdelivr.net/gh/chousinbin/Image/202207192351998.webp)
+![img](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202207192351998.webp)
 
 ​		最保险的关闭时先把服务改为手动再开启防止自动关闭！
 
 3. 开启Network Setup Service 服务
 
-![img](https://cdn.jsdelivr.net/gh/chousinbin/Image/202207192351873.webp)
+![img](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202207192351873.webp)
 
 4. 卸载VMware，用CCleaner清理注册表，重新安装Vmware。
 
@@ -398,7 +398,7 @@ Xshell是一个强大的安全终端模拟软件，支持SSH1，SSH2，以及Win
 
 名称-主机-端口22-确定-输入登陆的用户名-密码-连接-一次性保存密钥
 
-<img src="https://cdn.jsdelivr.net/gh/chousinbin/Image/202207200029633.png" alt="image-20220720002936336"  />
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202207200029633.png" alt="image-20220720002936336"  />
 
 ### Xftp远程传输文件
 
@@ -410,13 +410,13 @@ Xshell是一个强大的安全终端模拟软件，支持SSH1，SSH2，以及Win
 
 #### 解决中文乱码
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/xftp中文乱码.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/xftp中文乱码.png)
 
 从**xftp**菜单的小齿轮属性设置编码为UTF-8，即可解决。
 
-![image-20220720195200749](https://cdn.jsdelivr.net/gh/chousinbin/Image/xftp%E5%B1%9E%E6%80%A7.png)
+![image-20220720195200749](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/xftp%E5%B1%9E%E6%80%A7.png)
 
-![image-20220720195255045](https://cdn.jsdelivr.net/gh/chousinbin/Image/xftp%20UTF-8.png)
+![image-20220720195255045](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/xftp%20UTF-8.png)
 
 ## 5.vi与vim
 
@@ -462,7 +462,7 @@ Xshell是一个强大的安全终端模拟软件，支持SSH1，SSH2，以及Win
 
 ### vim快捷键图
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/vim%E5%BF%AB%E6%8D%B7%E9%94%AE.jpeg)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/vim%E5%BF%AB%E6%8D%B7%E9%94%AE.jpeg)
 
 
 
@@ -503,15 +503,15 @@ Xshell是一个强大的安全终端模拟软件，支持SSH1，SSH2，以及Win
 
 2. 如果不确定系统是否开启了**Selinux**或者刚装完没有修改过的系统，则最好用下面的方法解决：既在以字符串"Linux16”开头的行，将光标移动到该行的结尾，然后输入`init=/bin/bash enforcing=0`(前者作用让系统登录后加载bash解释器，后者是且**关闭Selinux**)
 
-   ![image-20220722210656964](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E6%89%BE%E5%9B%9Eroot%E5%AF%86%E7%A0%81.png)
+   ![image-20220722210656964](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E6%89%BE%E5%9B%9Eroot%E5%AF%86%E7%A0%81.png)
 
 3. 按下快捷键`Ctrl`+`X`启动，以单用户模式启动Linux。
 
-   ![image-20220722210958028](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E6%89%BE%E5%9B%9Eroot%E5%AF%86%E7%A0%812.png)
+   ![image-20220722210958028](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E6%89%BE%E5%9B%9Eroot%E5%AF%86%E7%A0%812.png)
 
 4. 在光标闪烁位置输入`mount -o rw,remount /`，回车。图中的`mount -o rw,remount /`命令是重新挂载根目录为可写状态（`rw`表示可写，`remount`是重新挂载），在单用户模式下默认根文件系统是处于只读状态。
 
-   ![image-20220722212955384](https://cdn.jsdelivr.net/gh/chousinbin/Image/%E4%BF%AE%E6%94%B9root%E5%AF%86%E7%A0%813.png)
+   ![image-20220722212955384](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/%E4%BF%AE%E6%94%B9root%E5%AF%86%E7%A0%813.png)
 
    在光标闪烁处输入`passwd`，回车，根据提示输入两次新密码。
 
@@ -1883,7 +1883,7 @@ ping baidu.com
 
 #### NAT网络原理图
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/Linux网络.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/Linux网络.png)
 
 #### 修改主机名
 
@@ -2093,7 +2093,7 @@ top 选项
 | -u 用户名 | 监听指定用户的进程    |
 |           |                       |
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/top.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/top.png)
 
 
 | 表头    | 含义                                    |
@@ -2130,7 +2130,7 @@ top 选项
 
 查看系统全部服务，带星号的服务是Linux自启动的服务。
 
-![](https://cdn.jsdelivr.net/gh/chousinbin/Image/setup2.png)
+![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/setup2.png)
 
 #### service管理服务
 
@@ -2396,7 +2396,7 @@ yum install 软件包
 - 开放端口
 - 在Linux、Windows下访问`https://linuxip:8080`，Linux的8080端口默认被防火墙禁止，需手动打开。
 
-![12](https://cdn.jsdelivr.net/gh/chousinbin/Image/tomcat8080.png)
+![12](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/tomcat8080.png)
 
 成功！
 
