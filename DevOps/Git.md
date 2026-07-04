@@ -123,7 +123,7 @@ git config --global user.email 用户邮箱
 
 1. 签名的作用是区分不同操作者的身份。用户签名信息在每一个版本的提交信息中能够看到，以此确定本次提交的谁做的。（Github 上 commit 者头像）
 2. Git首次安装必须设置一下用户签名，否则无法提交代码。
-3. 这里设置的用户签名的用户名和邮箱与将来登录代码托管平台的账号没有任何关系。
+3. 用户签名与登录账号无关，但签名邮箱必须与 GitHub 账号邮箱相同，否则热力图不更新。
 
 ## 初始化本地库
 
@@ -446,9 +446,7 @@ git merge 分支名
 
 非公网访问仓库名称用户自定义，有很多个供我们使用。
 
-## 远程仓库操作
-
-### 创建远程仓库别名
+## 创建远程仓库别名
 
 | 操作命令                     | 操作名称                   |
 | ---------------------------- | -------------------------- |
@@ -459,7 +457,7 @@ git merge 分支名
 
 查看远程地址别名有两行，说明这个别名可以用于推送、拉取、克隆等。
 
-### 推送本地库代码到远程库
+## 推送本地库代码到远程库
 
 ```
 git push 别名/远程链接 分支
@@ -467,7 +465,7 @@ git push 别名/远程链接 分支
 
 推送的最小单位是分支，需要指定推送哪一个分支。
 
-### 拉取远程库到本地库
+## 拉取远程库到本地库
 
 ```
 git pull 别名 分支
@@ -475,7 +473,7 @@ git pull 别名 分支
 
 当本地库与远程库的项目文件内容不一致时，需要先用`Pull`拉取到本地，更新本地库与远程库保持一致。
 
-### 克隆远程仓库到本地
+## 克隆远程仓库到本地
 
 ```
 git clone 远程地址
@@ -509,9 +507,9 @@ git clone 远程地址
 
 ## 顶级域名
 
-申请顶级域名并且指向`username.github.io`，会使之变为类似`www.username.com`的地址。
+申请顶级域名并且指向 `username.github.io`，会使之变为类似 `www.username.com` 的地址。
 
-#### 申请渠道
+**申请渠道：**
 
 1. 阿里云
 2. 腾讯云
@@ -524,7 +522,9 @@ git clone 远程地址
 
 在原项目的网址后面加上`\compare`可以访问该项目的版本比较页面，另外也有插件可以使得源码比较起来直观。
 
-# 配置代理
+# 常见问题
+
+## 配置代理
 
 > Github 时常访问速度慢甚至无法访问，仅仅打开代理不能作用于 Git Bash，需要在Bash 中进行手动配置，代理在 Bash 中才能生效。
 >
@@ -532,16 +532,16 @@ git clone 远程地址
 >
 > 对于 HTTPS 配置后大多可以正常生效，SSH配置后未见得会生效，因为 SSH 的 22 端口大多被代理服务商屏蔽，使得代理环境下 SSH 连接报错。
 
-## 协议对比
+### 协议对比
 
 | 协议名称 | 优点                                 | 缺点                                          |
 | -------- | ------------------------------------ | --------------------------------------------- |
 | HTTPS    | 广泛使用，端口大多数不会被禁         | 每次提交需要验证 Github 账号和密码            |
 | SSH      | 每次提交不需要验证 Github 账号和密码 | 必须先配置 SSH key，22 端口大多被代理服务商禁 |
 
-## 手动配置
+### 手动配置
 
-### HTTPS
+**HTTPS**
 
 ```shell
 // 设置全局代理
@@ -565,7 +565,7 @@ git config --global http.proxy socks5://127.0.0.1:7891
 git config --global https.proxy socks5://127.0.0.1:7891
 ```
 
-### SSH
+**SSH**
 
 目录：C:\User\UserName\.ssh\config
 
@@ -598,21 +598,19 @@ Host ssh.github.com
 ssh -T git@github.com
 ```
 
-### Clash TUN
+### **Clash TUN**
 
 - 打开 Service Mode，绿色地球标志亮起表示成功打开
 - 打开 Clash 的TUN Mode
 - 无需终端执行代理命令和编写配置文件
 
-![image-20240126210735365](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401262107425.png)
+<img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401262107425.png" alt="image-20240126210735365" style="zoom:50%;" />
 
-# Git Bash
-
-## Windows Terminal 添加 Git Bash
+## Win 终端添加 Git Bash
 
 1. 打开设置 - 添加新的配置文件 - 复制配置文件 Windows PowerShell - 复制
 
-   ![image-20240126213757459](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401262137511.png)
+   <img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401262137511.png" alt="image-20240126213757459" style="zoom:50%;" />
 
 2. 名称：Git Bash
 
@@ -622,6 +620,6 @@ ssh -T git@github.com
 
 5. 图标：`D:\ProgramDev\Git\mingw64\share\git\git-for-windows.ico`
 
-   ![](https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401262138495.png)
+   <img src="https://cdn.jsdelivr.net/gh/zhouxinbin/Image/202401262138495.png" style="zoom: 50%;" />
 
 6. 保存
