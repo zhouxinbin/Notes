@@ -1,1 +1,10 @@
 .DS_Store
+
+# Local database files
+*.mdf
+*.ldf
+
+# Large reference files intentionally kept outside Git
+CS/Java/韩顺平_循序渐进学Java零基础【完整笔记】.pdf
+CS/Development/Java/韩顺平_循序渐进学Java零基础【完整笔记】.pdf
+CS/OS/操作系统导论/lectures/27-future.pptx
